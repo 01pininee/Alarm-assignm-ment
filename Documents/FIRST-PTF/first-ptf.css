@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #666666;
+    font-family: montserrat;
+    scroll-behavior: smooth;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6));
+    background: url("MANING.JPG.jpg");
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+nav{
+    padding: 15px 20%;
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    text-align: right;
+    position: relative;
+    left: 80%;
+    bottom: 10vh;
+}
+ol{
+    flex-wrap: wrap;
+    gap: 20%;
+}
+a{
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+a:hover{
+    color: #FE1E4F;
+    transition: ease-in-out;
+}
+
+h2{
+    padding: 10px;
+    font-size: 2.1rem;
+    color: #fff;
+}
+/* p{
+    font-weight: 1.3rem;
+} */
+img{
+    width: 20%;
+    height: 60%;
+} 
+.atm{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fe1e4f;
+    border-radius: 15px;
+    padding: 15px ;
+}
+.btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fe1e4f;
+    border-radius: 15px;
+    border: none;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+.banner-area{
+    width: 50%;
+    position: relative;
+    top: 10%;
+    text-align: center;
+    left: 25%;
+    color: whitesmoke;
+    
+}
+
+
+h1{
+    margin-bottom: 15px;
+    font-size: 65px;
+}
+h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+hr44 
+.banner-text{
+    opacity: 1;
+    margin-top: 100px;
+    animation: 1s text-ani 1s forwards;
+}
+.img-area{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: cover;
+    z-index: 1;
+    background: center center;
+}
+
+.header-text{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    background: #000;
+}
+span{
+    color: #fe1e4f;
+}
+p{
+    /* max-width: 775px; */
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #695b6b;
+}
+
+@media screen and(max-width: 700px) {
+    .header-text{
+        font-size: 30px;
+    }
+    ul{
+        flex-direction: column;
+        flex-basis: 50px;
+    }
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    h2{
+        margin-bottom: 15px;
+    }
+    li{
+        margin: 0 7px;
+    }
+}
+
+@keyframes animate{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes text-ani{
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+@media only screen  and (max-width: 800px){
+    .banner-area{
+        min-height: 600px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .btn{
+        padding: 15px 40px;
+    }
+}
+/* info area */
+.info-area{
+    background: #1a1a1a;
+}
+p.social a{
+    width: 50px;
+    height: 250px;
+    display: inline-block;
+    background: #fe1e4f;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+.social a i{
+    line-height: 2.5;
+    font-size: 20px;
+}
+/* service */
+.service-area .content-area{
+    text-align: center;
+}
+.icon-area{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #fe1e4f;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.service-area{
+    background: #101010;
+}
+.single-service{
+    transition: all 0.6s ease-in-out;
+    /* background: #1a1a1a; */
+    margin: auto;
+}
+.single-service h2{
+    margin-bottom: 15px;
+    color: #fff;
+}
+.single-service:hover{
+    /* width: 45%; */
+    background: #fe1e4f;
+}
+.icon-area{
+    color: #fff;
+    padding: 25px;
+    font-size: 30px;
+}
+.single-service:hover .icon-area{
+    color: #fff;
+}
+.single-service:hover .icon-area i{
+    color: #101010;
+}
+.single-service:hover p{
+    color: #fff;
+}
+.content-area{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and(max-width: 1000px){
+    .service-area,
+.content-area,
+.single-service{
+    flex-basis: 30px;
+    }
+}
+@media only screen and(max-width: 800px){
+    .service-area,
+.content-area,
+.single-service{
+    flex-basis: 100px;
+}
+}
+.single-service{
+    height: 350px !important;
+}
+.work-area{
+    background: #1a1a1a;
+    height: 100vh;
+    
+}
+.contact{
+    background: #1a1a1a;
+}
+.content-area li{
+    padding: 5px;
+    flex-basis: 32px;
+    text-align: center;
+}
+/* .work-area img{
+    width: 50%;
+} */
+@media only screen and(max-width: 800px){
+.work-area .content-area ol{
+    flex-basis: 50%;
+    padding: 20px;
+    }
+}
+.content-area{
+    height: 150px;
+    width: 100%;
+    /* padding: 20px; */
+    flex-basis: 100%;
+    text-align: center;
+} 
+.single-contact{
+    height: 300px;
+    padding: 20px;
+    flex-basis: 100%;
+    text-align: center;
+}
+.contact{
+    height: 100%;
+    padding: 20px;
+    flex-basis: 50%;
+    text-align: center;
+}
+.single-contact input{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+textarea{
+    width: 50%;
+}
+.single-contact{
+    width: 50%;
+    padding: 15px;
+    border: none;
+    margin-bottom: 65px;
+} 
+input[type="submit"]{
+    background: #fe1e4f;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
+footer{
+    position: relative;
+    right: 90%;
+    height: 5vh;
+    background:  #fe1e4f;
+    width: 200%;
+}
+@media only screen and(max-width: 800px) {
+    .contact .content-area .single-contact{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* newsletter */
+
+.news-letter form{
+    display: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #000;
+    height: 50vh;
+}
+.form{
+    background: #000;
+
+}
+.newsletter form .btn{
+    padding: 20px;
+}
+form input{
+    padding: 15px;
+    font-size: 18px;
+    width: 100vh;
+    margin: 20px 27%;
+    border-radius: 50px;
+    border: none;
+}
+form .btn{
+    display: block;
+}
+.btn{
+    position: relative;
+    left: 40%;
+    width: 20%;
+    height: 50px;
+    padding: 15px 0;
+}
